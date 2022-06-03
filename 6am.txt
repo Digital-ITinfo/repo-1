@@ -1,0 +1,223 @@
+AWS & DevOps :
+--------------
+
+AWS - Amazon Web Services  --- Cloud Platform
+
+ServerRoom ---- Datacenter --Availability Zone } Server Running Locations
+
+Server -----> high capacity System--- 24X7 ,
+
+Onprimises: Servers@office		vs Cloud : Servers@third party 
+
+1)purchase the server			1) Rent based Servers (1-3)
+
+2) Room for Servers			2) X
+
+3) Ac setup-Temp controller device	3) X
+
+4) H/w and N/w Team			4) X
+
+5) Authentication devices 		5) X
+
+6)Extensive powerbackup			6) X
+
+7) Spare parts				7) X
+
+==================================================================================
+
+Cloud Services :
+
+IAAS : Infrastructure As A Service : Hardware
+
+PAAS : Platform As A Service : Hardware + Runtime
+
+SAAS : Software As A Service : Hardware+ Runtime + Application
+
+
+AWS : IAAS + PAAS 
+
+=====================================================
+
+Amazon -- AWS Cloud -- 38%
+
+AWS Free Tier : 12 months , 750 hrs --- CC/DC (Master or VISA)
+	
+	Rs : 100 - 200 ,max 500
+
+Microsoft ---Azure Cloud --- 18%
+
+ Azure Account : 12 months -- $200 ----> month ---- subscription
+
+Google ---- GCP ---6%
+
+IBM --- IBM Cloud ---4%
+	
+
+======================================================
+
+AWS --- 26(8) Running Regions + 84(24) AZs.
+
+Regions :
+
+North Virginia		us-east-1	6 AZ[us-east-1a,us-east-1b,us-east-1c,us-east-1d..]
+ohio			us-east-2	3 AZ[]
+NCal			us-west-1	3 AZ
+Oregon			us-west-2	4 AZ
+Mumbai			ap-south-1	3 AZ
+
+AWS : SolutionArchitect Associate Cirtificate 
+Networking
+Infrastructure
+Administration
+Data Maintanenece
+PAAS
+	
+=================================================
+
+Networking :
+
+1) IP Address
+2) VPC 
+3) Subnets
+4) IGW & NAT-IGW
+5) Route Tables
+6) SG & NACL
+7) Keypairs
+8) AMI
+9) EC2
+
+
+1) IP Address : Internet Protocol
+
+-It is an identity of a resource (OS/VM/Instance)
+-Two types :
+
+IPv4 : 32 bit range x.x.x.x [0.0.0.0 -- 255.255.255.255]
+
+IPv6 : 128 bit range x:x:x::x 
+
+ In Connective prospective IPv6 is better than IPv4
+
+ AWS supports IPv4 and IPv6
+
+--A resource can hold one public ip and one+ private ip
+
+public ip is reachable through internet
+
+private ip can't reachable through internet
+
+A resource primary ip is privateIP
+
+For every restart our resource publicip changes where as privateip remains same.
+
+ElasticIP used to get constant publicIP
+
+ElasticIP operations 
+
+1) Allocate ElasticIP to your Account/Region
+2) Associate to any resource
+3) DeAssociate from resource
+4) Release ElasticIP from Account
+
+
+
+CLASS-A : N.H.H.H --- 0 --- 0.0.0.0 To 127.255.255.255 : 1677724 ips
+
+	00000000.00000000.00000000.00000000 -- 01111111.11111111.11111111.11111111
+
+CLASS-B : N.N.H.H --- 10 --- 128.0.0.0 To 191.255.255.255 : 65536 ips
+
+	10000000.00000000.00000000.00000000 -- 10111111.11111111.11111111.11111111
+
+
+CLASS-C : N.N.N.H --- 110 --- 192.0.0.0 To 223.255.255.255 : 256 ips
+
+	11000000.00000000.00000000.00000000 -- 11011111.11111111.11111111.11111111
+
+========================================================================================
+
+VPC -- Virtual Private Cloud 
+
+--It is a Large Network
+
+--It is holds range of IP Address
+
+--VPC is identified by CIDR blocks
+
+  CIDR : ClassLess Inter Domain Routing
+
+   X.X.X.X/X
+	
+   /X Is a subnetMasking
+
+   As per General Networking /x range is /8 to /30
+
+   As per AWS Networking /x range /16 to /28
+
+   As per  AWS we can create 5 vpcs (1 default vpc+4 custom VPC)
+
+   subnet masking is going to decide how many ips are holded by VPC
+
+CLASS-A : VPC CIDR block : 10.50.0.0/15 -- 131072 ips
+
+CLASS-B : VPC CIDR block : 190.160.0.0/16 -- 65536 ips
+
+CLASS-c : VPC CIDR block : 220.190.0.0/24 -- 256 ips
+
+
+3) Subnets :
+
+--It is a slice of Large Network
+--subnets holds range ip address
+
+--subnets are dervice from vpc
+
+  --subnets is identified by CIDR blocks
+
+  CIDR : ClassLess Inter Domain Routing
+
+   X.X.X.X/X
+
+--- As per General Networking each subnet reserves 2 ips (min ip and Max ip)
+
+--- As per AWS  Networking each subnet reserves 5 ips first 4 and last 1)
+  
+    10.50.1.0/20
+
+    1) for Network Address   10.50.1.0
+    2) for VPC Router  10.50.1.1
+    3) for DNS Server  10.50.1.2
+    4) for future usage 10.50.1.3
+    5) for Network broadcast Address 10.50.1.255
+
+   Max we can create upto 200 subnets per each VPC.
+
+IGW : internet Gateway : To provide internet Services to your Network
+
+     VPC : IGW are in 1:1 
+     IGW is not chargable
+
+ NAT-IGW : Network Address Translation :  To provide internet Services to your Private Network
+   
+   NAT-IGW is chargable . $0.045 / hr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

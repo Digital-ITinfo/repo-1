@@ -1,0 +1,471 @@
+ 
+AWS & DevOPs :
+----------------
+
+-- Demo 
+
+--RoadMap on AWS,DevOps
+
+What is Server ?
+
+ServerRoom ------> Datacenter -------> Availability Zone }Server Running Locations
+
+Onprimises: Server@office	vs 	Cloud : Server@thirdparty loc
+
+1)Purchase the Server			1) Rent based Servers (1-3)
+
+2)Room for Server			2) X
+
+3) Temp Controller devices		3) X
+   AC setup -- 23c
+
+4) H/w and N/w Team 			4) X
+
+5) Authentication devices		5) X
+
+6) Extensive powerbackup		6) X
+
+7) spare parts				7) X
+
+==========================================================
+
+Cloud Service :
+
+IAAS : Infrastructure As A Service : Hardware 
+
+PAAS : Platform As A Service : Hardware + Runtime
+
+SAAS : Software As A Service : Hardware + Runtime + Application
+
+AWS : IAAS + PAAS
+
+=================================================================
+
+AWS Cloud 38%, Azure Cloud 18%,GCP 6%,IBM cloud 4%,.....
+
+
+AWS : FreeTier Account :12 months ,750 hrs,CC/DC (Master/VISA) : 200 -300 
+
+Data security : Laptop ----- AWS Account -----Encripted,KMS----- Data center
+
+Account : userName + Password + MFA
+
+============================================================================
+
+BasicNetworking : 3 - 4 hrs
+
+AWS - Solution Architect Associate Cirtificate -- 30 - 35 hrs 
+
+Linux + Shellscripting : max 10 hrs
+
+DevOps : 7+ tools
+
+ SDLC , GIT , Docker,Ansible,Maven ,Jenkins ,Nagios,Kubernetes,SonarQube,Nexus/jfrog,Terraform 
+
+==============================================================
+-RoadMap on AWS 20% (*),80%
+
+Account info
+ 
+-Infrastructure 
+-Administration
+-Data Maintanenece Service
+-PAAS
+-IAAC : AWS CLI,CloudFormation(stack)--json,Lambda--python,Terraform
+
+============================================
+
+About Regions :
+
+AWS --- 17/26 Region
+
+Each Region having Azs
+
+SNO	NAME	CODE		AZS
+1	NV	us-east-1	6
+				[us-east-1a,us-east-1b,us-east-1c,us-east-1d,us-east-1e,
+				 us-east-1f]
+2	ohio	us-east-2	3
+3	NC	us-west-1	3
+4	oregon	us-west-2	4
+5	mumbai	ap-south-1	3
+
+
+Billing :
+				
+--Personal Account
+
+-- CC / DC  (unblock international swipping )
+
+-- PAN no / NO PAN
+
+-- Address
+
+-- start payments // otp
+
+-- verification code sent to your mobile number
+
+===================================================
+
+
+Level :
+
+AWS Networking :
+
+1) VPC SetUp :
+2) EC2 Launching -- windows & Linux (RHEL,ubuntu,Amazon Linux)
+
+   Linux commands and Operations
+3)ElasticIP and custom AMI
+4)NAT-IGW & Peering
+5)SG & NACL,3-Tier Architecture
+6)EBS-- Volumes
+7)EFS -- File Sharing
+8)Load Balacers -- Classic,Network & Application
+9)ASG -- AutoScaling Group
+10)ELB+ASG
+
+11) IAM
+12) S3 -- Simple Storage Service
+13) RDS -- Database ,SQL
+14) DMS -- migration
+15) CloudFormation : PAAS, stacks
+16) ElasticBeanstalk -- PAAS
+17) Lambda Service -- PAAS,IAAC
+18) CloudFront -- CDN
+19) Route53 -- hosting
+20) SNS,SQS,SES....
+
+=============================================================================
+
+
+--Demo overview
+
+
+what is Server ? 
+
+=> Server Room -----> Data center ----> Availability Zone } Server Running
+
+Onprimises : Servers@office		Cloud : Servers@thirdparty Location
+
+1)purchase the Server			1) Rent based Servers (1 - 3 yrs)
+
+2)Room for Server			2) X
+
+3)Temp Controller:ACsetup		3) X
+
+4) H/w & N/w Team			4) X
+
+5) Authentication devices		5) X
+
+6) Extensive Powerbackup		6) X
+
+7) spare parts				7) X
+
+===========================================================================
+
+Cloud Services :
+
+IAAS : Infrstructuer As A Service : Hardware 
+
+PAAS : Platform AS A Service : Hardware + Runtime
+
+SAAS : Software As A Service : Hardware + Runtime + Application
+
+AWS : IAAS + PAAS
+
+==============================================================================
+
+Cloud vendors : 
+
+AWS -- Amazon --- 38%
+
+ --Aws Free Tier Account : 750 hrs ,12 moths,CC/DC (Master/VISA)
+
+Azure-- Microsoft --- 18%
+
+GCP --- Google ---- 6%
+
+IBM Cloud --- IBM --- 4%
+
+==========================================================
+
+--Roadmap on AWS :
+
+--Infrastructure Launching
+
+--Administration
+
+--DataMaintanenece
+
+--PAAS
+skillset : 80 hrs ,Assignments,Project
+
+---Basic Networking : 3-4 hrs
+-- AWS --- 20 Services ---Solution Architect Associate Cirtificate --30 - 35 hrs
+-- Linux + Shellscripting : max 10 hrs 
+--DevOPs : 7+ tools : 30 - 35 hrs
+ 
+ Git,Docker k8S Ansible Maven  Jenkins SonarQube Nexus/Jfrog Nagios Terraform
+
+--About AWS Account
+
+--17 regions / 26 region
+
+NV	us-east-1	6 AZs
+ohio 	us-east-2 	3 AZs
+NC	us-west-1	3 AZs
+Oregon	us-west-2	4 AZs
+
+Billing : 
+
+support : 
+
+Roadmap on DevOps
+
+1) SDLC --> 1)waterfall Model 2) Agile Mode
+
+2) Source Code Management : GITHUB ,BitBucket,SVN (5 hrs)
+
+-Git -GitHub(GUI) -GitHub Enterprise
+
+--Remote repo ,LocalRepo
+--git commands ,lifecycle
+--git operations
+--git undo operations
+--git merge,rebase
+--git merge conflicts
+--git branching strategies
+--git PR
+
+
+3)Container Management tool : Docker -- 5-6 hrs
+
+ Docker Architecture
+ docker commands
+ docker container lifecycle
+ docker file
+ docker compose
+ docker volumes & Bindmounts
+ docker Network
+ docker swarm--cluster creation
+
+4) Config Management tool : Ansible /Puppet/Cheff
+
+Ansible Architecture [Ansible MasterNode <-----> Ansible WN]
+Ansible Adhoc commands -- Remote commands
+Ansible Playbooks --- yaml files
+package installation,uninstallation,service start,stop
+Tool Installation,INfrastructure Launching
+Copy,Fetch,File,Temple Module
+Ansible volts,Tags,deploymnets
+Ansible Roles
+
+5) Build Tool Maven --->Java
+
+   --POM.xml creation
+   --dependency download
+   --artifact Creation
+
+6) CI Tool : Jenkins : CICD
+
+1) Jenkins Installation
+2) Jenkins Jobs
+3) Jenkins plugin installation & config
+4) Jenkins --- GIT
+5) Jenkins --GIT---Maven
+6) Jenkins : Git--Maven -- Tomcat
+7) Jenkins ----SonarQube
+8) Jenkins --- Nexus/Jfrog
+9) Jenkins --- Docker
+10)Jenkins --- Ansible
+11) Jenkins scripted CICD Pipeline
+
+
+7) Monitoring : Nagios 
+
+   Nagios Dashboard ------ Server
+
+8)Orchestration Kubernetes : Cluster Creation : kubeadm 1.20
+
+1) baremetal Installation process
+2) POC
+3) Kubernetes Dashboard
+4) volumes
+5) secret Managment
+6) EKS on AWS : kubeadm 1.21 
+
+=====================================================================
+Basic Networking :
+
+1) IP Address :
+
+2) VPC : Virtual Private Cloud
+
+3) Subnets 
+
+4) IGW -- Internet Gateway
+   NAT-IGW : Network Address Tranlation
+
+5) ROuteTables
+
+6) SG -- Security Group
+   NACL -- Network Access Controle List
+
+7) Keypairs
+
+8) AMIs -- Amazon Machine Image
+
+9)EC2 -- Elastic Cloud Computing
+-------------------------------------------------------------------
+
+1) IP Address :
+
+-It is an identity of a resource (vm/os/instance)
+
+-IP address are 2 types 
+
+ 1) IPv4 
+
+	- 32 bit range
+	- x.x.x.x [0.0.0.0 -- 255.255.255.255]
+ 2) IPv6
+
+	- 128 bit range
+	- x:x:x::x
+        - trillions of ips 
+ 
+IPv6 address range is so huge. It's of 128-bit size. This means it can provide 340 undecillion (36 zeros) unique IP addresses. 
+The exact numbers are 340,282,366,920,938,463,463,374,607,431,768,211,456. 
+
+==>
+A resource can hold min one public ip and one+ private ips.
+
+public IP : reachable through internet.
+
+private IP : can't be reachable through internet.
+
+The primary IP of a resource is private .
+
+Whenever we restart a resource its public ip changes,privateIP remains same.
+
+
+
+DevOps : @11-12 am
+
+         SDLC
+
+AWS : @2-3 pm
+     
+   after 10 days    @3 to 4 pm
+
+
+VPC setup :
+
+pre-EC2 :
+
+1)IP Address
+2)VPC
+3)Subnets
+4)IGW & NAT
+5)Route Tables
+6)SG
+
+--vpc setup
+
+7)Keypairs : AWS having public key and private key
+
+--owner identity
+
+ --key pairs are region specific.
+
+ --AWS maintains public key
+
+ --You maintains private key
+
+Note : 5000 keypairs per region
+
+key file formats:
+1) .pem : privacy enhanced mail
+2) .ppk : putty private key
+
+While launching EC2 we supposed to associate keypairs.
+
+when ever you try to login to EC2 instance we have use below given tools.
+
+1) putty :required .ppk file
+
+2) GitBash : required .pem file
+
+3) Mobaxterm : required .pem file
+
+if you download putty ,puttygen by default downloaded.
+
+puttyGen : converts .pem file to .ppk
+
+if you loose keypairs , we can't recover those keypairs.
+
+AMI : Amazon Machine Image 
+
+   iso file  (image) =====> AMI it contains os
+
+EC2 --- > Elastic Cloud Compute --- it is a virtual Machine
+
+------------------------------------------------------------------
+
+Virtualization : 
+
+
+ 
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
